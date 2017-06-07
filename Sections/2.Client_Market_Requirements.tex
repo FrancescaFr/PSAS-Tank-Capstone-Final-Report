@@ -1,0 +1,66 @@
+%\textit{Client Requirements:  We have 2-3 pages for this, so we can take a solid paragraph at least to thoroughly explain each requirement.  Structure them in such a way that the requirement is easy to identify as the main topic of the paragraph, and so that the importance of the requirement is clear by the end of the section describing it.}
+
+%\texit{(Main Point): The 3 main requirements, LOX compatible, scalable from our proof of concept to ‘full size’ LV4.0 Rocket dimensions to function with a FS=2, well documented layup procedure available through the PSAS repository.}
+
+\subsection{Background}
+
+Portland State Aerospace Society is building a rocket with the intention of reaching an altitude of 100 kilometers (the Von Karman line). For this to be possible, the rocket’s propellant mass ratio (how much propellant you need compared to the total rocket mass) must be optimized. The total mass of a rocket is typically  85\% propellant and 15\% vehicle and pay-load \cite{Pettit2012}. This ratio makes dry mass reduction a major point in any rocket design. PSAS set the goal of the development of a composite tank to hold their LOX propellant. The main assumption in setting this goal is that a tank fabricated using composite materials will significantly reduce the propellant to mass ratio when compared to a conventional aluminum tank. Recognizing that there are significant challenges associated with designing a composite tank, the team was asked to provide a proof-of-concept design without being constrained by mass.
+
+\subsection{Project Requirements}
+\vspace{1em}
+\subsubsection{Complete List of client requirements:}
+\begin{itemize}[nolistsep]
+%\setlength\itemsep{0.01em}
+\item Tank must be compatible with liquid oxygen (LOX) for duration of fill and launch cycle.
+
+\item Tank maintains integrity and seal when pressurized to 3 ATM (45 psi).
+
+\item Tank is able to withstand compressive load of at least 4000N (900 lb).
+
+\item Design has a factor of safety of at least 2.
+
+\item Tank design and manufacturing process can scale to final launch vehicle dimensions (tentatively approximated as 10” diameter).
+
+\item Tank must be compatible with previously developed modular airframe design.
+
+\item Target tank manufacturing cost is \$1000 with an acceptable upper limit of \$4000. 
+
+\item Complete documentation of research, analysis, manufacturing processes, and testing to be made publicly available on the PSAS Github repository.
+
+\end{itemize}
+
+\subsubsection{Description of Key project requirements:}
+
+PSAS designated four main requirements for the successful completion of this project. The first of these requirements, and arguably the most important, was for the tank to be LOX compatible. LOX is an aggressive oxidizer and the epoxy resin contained in the carbon fiber used in the fabrication of the tank is highly flammable. Therefore, should the two materials come into contact, there is a high probability of combustion occurring. Such an event would mean catastrophic failure at or before launch, and a loss of the rocket. Given this information, the tank needed to be designed such that the LOX was completely isolated from the carbon fiber layers.
+
+%Tank design and manufacturing process can scale to final launch vehicle dimensions (tentatively approximated as 10” diameter).
+The tank developed here was a proof-of-concept prototype. This led to the second main requirement that was placed on the design; the tank must be scalable to the expected full-size dimensions of the rocket at launch. The current, tentative, diameter of the full-scale tank is set at 10 inches. Therefore, any manufacturing process used in the fabrication of sub-scale tank components must also be achievable for the full-scale counterparts. This includes all in-house manufacturing, layup procedures, component assembly, testing, and validation analysis performed.
+
+%Design has a factor of safety of at least 2.
+In designing a rocket that utilizes a powerful and combustible fuel such as LOX, safety is a major concern. The standard minimum factor of safety in aerospace applications is 1.5 \cite{FS15}, balancing the need for safety and weight optimization. To this end, PSAS established a minimum factor of safety of 2 on all components. This minimum factor of safety constitutes the third main project requirement.
+
+%  At the same time, the urge to over-engineer the design in the name of safety, and therefore sacrifice the gains inherent in the upgraded design, must be curtailed. 
+
+%Complete documentation of research, analysis, manufacturing processes, and testing to be made publicly available on the PSAS Github.
+All work performed by PSAS is available to the public, leading to the fourth main requirement that all fabrication procedures, materials, engineering analysis, and design processes associated with the tank be well documented and available through the PSAS Github repository. The open source nature of the project allows any future persons adopting this tank design to replicate the work done or modify the functional tank design to suit their needs.
+
+%Tank maintains integrity and seal when pressurized to 3 ATM (45 psi). Tank is able to withstand compressive load of at least 4000N (900 lb).
+It also needed to be shown that when scaled up to flight ready sizes, all components were able to withstand the predicted flight loadings. PSAS provided the results of optimization calculations that predicted the peak flight loads to be 3atm internal pressure with a compression loading of 4000N. The performance measures which were to be met by this composite tank (ref RM matrix/performance metric described in rubric) were as follows:  (ref list below, pressurized to 3atm, expected initial flight loading of 4000N etc..)
+
+%Key design elements must be machinable in-house or outsourced for less than \$1000 each at full scale.
+As a part of the amateur rocket community, PSAS also requires that the cost to produce the rocket not prohibit other self-funded, university rocket clubs from replicating the work. PSAS set an arbitrary target manufacturing cost of \$1000 with a maximum cost of \$4000. 
+
+% In an attempt to achieve this, PSAS set an arbitrary maximum component cost of \$1000. 
+% An upper limit was not given for the number of components, but accomplishing functionality while reducing the number of components is desirable as a weight saving mechanism. 
+
+%Tank must be compatible with previously developed modular airframe design.
+
+Finally, the current rocket airframe design is composed of several carbon fiber modules, held together by aluminum mating rings with radially oriented fasteners. PSAS stipulated that the LOX tank must also be modular. For us, this meant two things. First, our design must allow additional features that will interface with other modules to be incorporated with ease. Second, the tank does fit inside the rocket, but rather the outer walls of the tank are also the skin of the rocket.  
+
+
+
+
+
+
+
+\newpage

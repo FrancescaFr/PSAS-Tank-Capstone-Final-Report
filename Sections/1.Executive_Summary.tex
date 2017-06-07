@@ -1,0 +1,48 @@
+%, Executive Summary:(Page numbers start here) One page MAX leaving the three subheadings for easy reading
+
+\subsection{Project Objective Statement}
+Design, fabricate, and test a proof-of-concept liquid oxygen composite fuel tank prototype that can be scaled up by Portland State Aerospace Society (PSAS) for use on their first liquid-fueled  rocket. 
+
+%capable of reaching an altitude of 100km.
+
+%, with the ultimate goal of reaching an altitude of 100km.
+
+\subsection{Final Status of Design Project}
+
+The manufacture of custom, light-weight, single-piece, metal tanks is beyond the budget and scope of an amateur rocket team. Off-the-shelf pressure vessels are heavy and cannot be optimized to fit rocket geometry. Therefore, the goal of this project is to develop a structurally and chemically safe propellant tank that utilizes a pre-existing rocket airframe structure \cite{LV3Airframe} and light-weight composite materials that will achieve a large propellant mass ratio.The following is a list of the key client requirements for the project:
+
+\vspace{0.2cm}
+
+\begin{itemize}[nolistsep]
+%\setlength\itemsep{0.01em}
+\item Tank must be compatible with liquid oxygen (LOX) for duration of fill and launch cycle.
+
+\item Tank maintains integrity and seal when pressurized to 3 ATM (45 psi).
+
+\item Tank is able to withstand compressive load of at least 4000N (900 lb).
+
+\item Design has a factor of safety of at least 2.
+
+%\item Tank design and manufacturing process can scale to final launch vehicle dimensions (tentatively approximated as 10” diameter).
+
+%\item Tank must be compatible with previously developed modular airframe design.
+
+%\item Key design elements must be machinable in-house or outsourced for less than \$1000 each at full scale.
+
+%\item Complete documentation of research, analysis, manufacturing processes, and testing to be made publicly available on the PSAS Github repository.
+
+\end{itemize}
+\vspace{0.2cm}
+The final tank design must be compatible with the existing modular airframe design  \cite{LV3Airframe} and utilize existing structural materials donated to PSAS. The primary challenge is the carbon fiber provided contains an epoxy resin that is not compatible with LOX. Therefore, this design is focused on incorporating an inert, functionally impermeable liner that maintains a seal across the range of operating pressures and temperatures.
+
+The current version of the design incorporates four main subsystems: a structural composite shell, rings to support the shell, a liner to isolate the LOX, and end caps with fittings for plumbing. The design employs a Polytetrafluoroethylene (PTFE) tube that is sealed at the ends via radial compression between the support rings and end caps using a shrink fit. External layers of carbon fiber and honeycomb material provide structural strength. 
+
+\subsection{Key Performance Metrics:}
+%\textit{How does the design meet the requirements?  Provide brief evidence for the answers.  This should reflect the three main deliverables that PSAS wanted addressed.  This needs to line up with our RM matrix.}
+
+A liquid nitrogen-filled, 3:10 scale tank was crush tested, and failed under a load of 9500 lbs yielding a factor of safety greater than 10. The shrink-fit end caps were designed to provide the seating pressure for PTFE given in the American Society of Mechanical Engineering (ASME) pressure vessel code. Analysis suggests the seal improves at cryogenic temperatures. A hydrostatic pressure test was performed in which the tank maintained a pressure of 100 psi, providing a factor of safety of greater than 2.
+
+The thickness of the liner was chosen based on the ability to machine a liner in-house while maintaining a uniform wall thickness. The current thickness exceeds the thickness necessary for the liner to function as a LOX barrier. Provided the liner maintains the seal as expected at cryogenic temperature, the LOX is fully isolated from the carbon fiber epoxy resin. This functionality will be tested later. 
+
+All tank parts and manufacturing processes can scale to a flight ready tank. PSAS will be provided with an open source, python-based stress calculation tool to assist in future design iterations. Other documentation provided to PSAS will include a detailed bill of materials (BOM) and manufacturing procedure tutorials for all developed components. 
+\newpage
